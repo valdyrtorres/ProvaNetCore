@@ -30,7 +30,7 @@ namespace Prova.Teste
         }
 
         [Fact]
-        public async Task TestarGetContatos()
+        public async Task TestarGetContatosAtivos()
         {
             var response = await _apiContatos.Get();
             response.StatusCode.Should().Be(HttpStatusCode.OK,
@@ -39,7 +39,7 @@ namespace Prova.Teste
         }
 
         [Theory]
-        [InlineData(9)]
+        [InlineData(17)]
         public async Task TestarDeleteContato(int idContato)
         {
             var response = await _apiContatos.Delete(idContato);
@@ -74,28 +74,12 @@ namespace Prova.Teste
         }
 
         [Theory]
-        [InlineData(3, "Valdir Bigode", "1969-06-11 19:12:45", true, "Masculino")]
-        public async Task TestarUpdateContato(
-            int idContato,
-            string Nome,
-            string iDtString,
-            bool flagAtivo,
-            string sexo)
+        [InlineData(22)]
+        public async Task TestarDesativarContato(int idContato)
         {
-            ContatoDTO corpo = new ContatoDTO();
+       
 
-            corpo.Id = idContato;
-            corpo.Nome = Nome;
-            string[] dataNasc = iDtString.Split(' ');
-            string[] dataSomente = dataNasc[0].Split('-');
-            string[] horaSomente = dataNasc[1].Split(':');
-            var oDate = new DateTime(int.Parse(dataSomente[0]), int.Parse(dataSomente[1]), int.Parse(dataSomente[2]), 
-                int.Parse(horaSomente[0]), int.Parse(horaSomente[0]), int.Parse(horaSomente[0]));
-            corpo.DataNascimento = oDate;
-            corpo.IsAtivo = flagAtivo;
-            corpo.Sexo = sexo;
-
-            var response = await _apiContatos.Put(idContato, corpo);
+            var response = await _apiContatos.Patch(idContato);
             response.StatusCode.Should().Be(HttpStatusCode.OK,
                 $"* Ocorreu uma falha: Status Code esperado (200, OK) diferente do resultado gerado *");
 
@@ -149,6 +133,16 @@ namespace Prova.Teste
             // Faz o teste quebrar
             //response.StatusCode.Should().Be(HttpStatusCode.OK,
             //    $"* Ocorreu uma falha: Status Code esperado (200, OK) diferente do resultado gerado *");
+
+        }
+
+        [Theory]
+        [InlineData(10)]
+        public async Task TestarGetContatoPorIdInativo(int idContato)
+        {
+            var response = await _apiContatos.Get(idContato);
+            response.StatusCode.Should().Be(HttpStatusCode.BadRequest,
+                $"* Ocorreu uma falha: Status Code esperado (400, OK) diferente do resultado gerado *");
 
         }
     }

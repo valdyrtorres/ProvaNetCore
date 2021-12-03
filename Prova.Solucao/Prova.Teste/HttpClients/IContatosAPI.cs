@@ -10,14 +10,14 @@ namespace Prova.Teste.HttpClients
         [Get("/api/Contatos/{id}")]
         Task<ApiResponse<ContatoDTO>> Get(int id);
 
-        [Get("/api/Contatos")]
+        [Get("/api/Contatos/ativos")]
         Task<ApiResponse<IList<ContatoDTO>>> Get();
 
         [Post("/api/Contatos")]
         Task<ApiResponse<ContatoDTO>> Post([Body] ContatoDTO contatoDTO);
 
-        [Put("/api/Contatos/{id}")]
-        Task<ApiResponse<ContatoDTO>> Put(int id, [Body] ContatoDTO contatoDTO);
+        [Patch("/api/Contatos/{id}")]
+        Task<ApiResponse<ContatoDTO>> Patch(int id);
 
         [Delete("/api/Contatos/{id}")]
         Task<ApiResponse<ContatoDTO>> Delete(int id);
