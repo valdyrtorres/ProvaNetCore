@@ -20,6 +20,7 @@ namespace Prova.Api.Controllers
             _contatoRepository = contatoRepository;
         }
 
+        /*
         [HttpGet]
         public ActionResult<IEnumerable<ContatoDTO>> GetContatos() 
         {
@@ -34,6 +35,7 @@ namespace Prova.Api.Controllers
             });
             
         }
+        */
 
         [HttpGet("ativos")]
         public ActionResult<IEnumerable<ContatoDTO>> GetContatosAtivos()
@@ -106,6 +108,7 @@ namespace Prova.Api.Controllers
             return Ok(resultado);
         }
 
+        /*
         [HttpPut("{id}")]
         public IActionResult UpdateContato(int id, [FromBody] ContatoDTO contatoDTO)
         {
@@ -136,6 +139,7 @@ namespace Prova.Api.Controllers
 
             return Ok(contatoDTO);
         }
+        */
 
         [HttpDelete("{id}")]
         public IActionResult DeleteContato(int id)
@@ -183,11 +187,12 @@ namespace Prova.Api.Controllers
             }
 
             ContatoDTO contatoDTO = dbcontato.AsDto();
-            contatoDTO.IsAtivo = false;  
+            contatoDTO.IsAtivo = false;
 
             try
             {
-                _contatoRepository.UpdateContato(contatoDTO.AsContato());
+                dbcontato.IsAtivo = false;
+                _contatoRepository.UpdateContato(dbcontato);
                 contatoDTO.Valido = true;
             }
             catch (Exception ex)
