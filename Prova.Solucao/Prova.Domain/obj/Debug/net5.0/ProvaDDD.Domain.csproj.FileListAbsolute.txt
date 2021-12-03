@@ -1,0 +1,12 @@
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\bin\Debug\net5.0\ProvaDDD.Domain.deps.json
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\bin\Debug\net5.0\ProvaDDD.Domain.dll
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\bin\Debug\net5.0\ref\ProvaDDD.Domain.dll
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\bin\Debug\net5.0\ProvaDDD.Domain.pdb
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.csproj.AssemblyReference.cache
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.AssemblyInfoInputs.cache
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.AssemblyInfo.cs
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.csproj.CoreCompileInputs.cache
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.dll
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ref\ProvaDDD.Domain.dll
+C:\devcode\dotNet\ProvaDDD\ProvaDDD.Solucao\ProvaDDD.Domain\obj\Debug\net5.0\ProvaDDD.Domain.pdb

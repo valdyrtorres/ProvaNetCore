@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "23d42f99-9e0e-49e5-8161-9d48ef1ec2f8": {
+      "ProjectGuid": "23d42f99-9e0e-49e5-8161-9d48ef1ec2f8",
+      "DisplayName": "Prova.Api",
+      "ColorIndex": 0
+    },
+    "0bec8afe-3217-499d-bd67-85d31c094281": {
+      "ProjectGuid": "0bec8afe-3217-499d-bd67-85d31c094281",
+      "DisplayName": "Prova.Application",
+      "ColorIndex": 1
+    },
+    "0a4a2c13-dd14-4b51-ba7c-7cd62bd555c3": {
+      "ProjectGuid": "0a4a2c13-dd14-4b51-ba7c-7cd62bd555c3",
+      "DisplayName": "Prova.Domain",
+      "ColorIndex": 2
+    },
+    "ae1c2bc8-62fb-4425-abfd-e3f56d9e50f2": {
+      "ProjectGuid": "ae1c2bc8-62fb-4425-abfd-e3f56d9e50f2",
+      "DisplayName": "Prova.Infra",
+      "ColorIndex": 3
+    },
+    "453e1636-949d-434e-bef7-790ca305b8ee": {
+      "ProjectGuid": "453e1636-949d-434e-bef7-790ca305b8ee",
+      "DisplayName": "Prova.Teste",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
